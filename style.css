@@ -71,8 +71,10 @@ h2 {
 
 .proximos {
   margin: 1rem;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(4,minmax(auto,1fr));
   gap: 1rem;
   max-width: 90%;
   overflow-x: auto;
