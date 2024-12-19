@@ -127,3 +127,25 @@ footer {
   margin: 0 auto;
   max-width: 70%;
 }
+
+@media only screen and (min-width: 768px) {
+  .hoy {
+      grid-template-columns: 1fr 2fr;
+  }
+
+  .proximos {
+    grid-template-columns: [inicio] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [fin];
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo-imagen{
+    width: 500px;
+  }
+  .logo-titulo {
+    font-size: 42px;
+  }
+  nav ul li a {
+      font-size: 32px;
+  }
+}
