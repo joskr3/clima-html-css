@@ -48,6 +48,7 @@ main {
   height: 100%;
   flex: 7;
 }
+
 nav {
   margin: 1rem;
   display: flex;
@@ -74,6 +75,7 @@ ul {
 .icono-clima {
   margin: auto;
 }
+
 .info-hoy {
   display: flex;
   margin: auto;
@@ -118,8 +120,20 @@ h2 {
   box-shadow: 5px 2px 5px 0px rgba(217, 217, 217, 1);
 }
 
+.dia:hover {
+  background: rgba(217, 217, 217, 1);
+}
+
 footer {
-    flex: 1;
+  flex: 1;
+}
+
+footer p::after {
+  content: " 🌞";
+}
+
+footer p::before {
+  content: "🌞 ";
 }
 
 .contenido {
@@ -130,7 +144,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .hoy {
-      grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .proximos {
@@ -139,13 +153,15 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
-  .logo-imagen{
+  .logo-imagen {
     width: 500px;
   }
+
   .logo-titulo {
     font-size: 42px;
   }
+
   nav ul li a {
-      font-size: 32px;
+    font-size: 32px;
   }
 }
