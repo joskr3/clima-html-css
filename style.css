@@ -68,3 +68,33 @@ span {
 h2 {
   font-weight: 400;
 }
+
+.proximos {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 90%;
+  overflow-x: auto;
+
+  /*  1rem -> 16px */
+}
+
+.dia img {
+  width: 50px;
+}
+
+.dia {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(217, 217, 217, 1);
+
+  min-width: 100px;
+  max-width: 200px;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  /* -webkit-box-shadow: 10px 2px 5px 0px rgba(217, 217, 217, 1);
+  -moz-box-shadow: 10px 2px 5px 0px rgba(217, 217, 217, 1); */
+  box-shadow: 5px 2px 5px 0px rgba(217, 217, 217, 1);
+}
