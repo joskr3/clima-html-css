@@ -12,8 +12,16 @@
   text-decoration: none;
 }
 
+body {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +41,13 @@ header {
   width: 50px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  flex: 7;
+}
 nav {
   margin: 1rem;
   display: flex;
@@ -74,7 +89,7 @@ h2 {
   /* display: flex;
   justify-content: center; */
   display: grid;
-  grid-template-columns: repeat(4,minmax(auto,1fr));
+  grid-template-columns: [inicio] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [fin];
   gap: 1rem;
   max-width: 90%;
   overflow-x: auto;
@@ -87,16 +102,23 @@ h2 {
 }
 
 .dia {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: subgrid;
   border: 1px solid rgba(217, 217, 217, 1);
-
   min-width: 100px;
   max-width: 200px;
   padding: 1rem;
   cursor: pointer;
   border-radius: 10px;
-  /* -webkit-box-shadow: 10px 2px 5px 0px rgba(217, 217, 217, 1);
-  -moz-box-shadow: 10px 2px 5px 0px rgba(217, 217, 217, 1); */
   box-shadow: 5px 2px 5px 0px rgba(217, 217, 217, 1);
+}
+
+footer {
+    flex: 1;
+}
+
+.contenido {
+  padding: 0 auto;
+  margin: 0 auto;
+  max-width: 70%;
 }
