@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   max-width: 100%;
   font-family: "Roboto", serif;
   font-weight: 100;
@@ -24,7 +24,6 @@ header {
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   padding: 10px 20px;
   background: #e0f7fa;
   border-radius: 12px;
@@ -32,13 +31,21 @@ header {
 
 .logo-titulo {
   display: flex;
+
+  align-items: baseline;
   width: 100%;
   justify-content: space-between;
   gap: 1rem;
+
+  h1 {
+    border: 3px solid black;
+  }
 }
 
 .logo-imagen {
+  border: 3px solid black;
   width: 50px;
+  height: 100px;
 }
 
 main {
@@ -66,6 +73,7 @@ ul {
 
 .hoy {
   display: grid;
+  border: 1px solid;
   place-content: center;
   gap: 1rem;
   grid-template-columns: 1fr;
@@ -140,6 +148,57 @@ footer p::before {
   padding: 0 auto;
   margin: 0 auto;
   max-width: 70%;
+}
+
+.proximos__dia__contenedor {
+  background: salmon;
+  border-radius: 12px;
+  padding: 12px 10px 6px 5px;
+  margin: 12px 0;
+
+  p,
+  h3 {
+    color: white;
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+}
+
+.proximos__dia__imagen {
+  display: flex;
+  margin: auto;
+}
+
+.contenedor_de_ejemplos_box_sizing {
+  display: flex;
+  background: yellow;
+  justify-content: center;
+  gap: 6px;
+}
+
+.box-sizig-border-box-ejemplo-sin-aplicar {
+  /* display: flex;
+  flex-direction: row; */
+  padding: 1rem;
+  background: skyblue;
+  border: 5px solid;
+  height: 200px;
+  width: 200px;
+  /* flex-basis: 200px; */
+}
+
+.box-sizig-border-box-ejemplo-con-aplicacion {
+  /* display: flex;
+  flex-direction: column; */
+  box-sizing: border-box;
+  border: 5px solid;
+  padding: 1rem;
+  height: 200px;
+  width: 200px;
+  background: lightgreen;
+  /* flex-basis: 200px; */
 }
 
 @media only screen and (min-width: 768px) {

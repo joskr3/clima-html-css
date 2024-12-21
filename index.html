@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    p {
+      font-size: 14px;
+    }
+  </style>
   <link rel="stylesheet" href="style.css">
   <title>Clima</title>
 </head>
@@ -36,16 +41,31 @@
         <p>Temp: <span>25°C</span> | Humedad: 40% | Viento: 10km/h</p>
       </div>
     </section>
-    <section class="contenido">
+    <article class="contenido">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam dignissimos esse nesciunt magnam ipsam tenetur eos corrupti molestiae repellat recusandae nihil nisi corporis, similique dolorem eveniet asperiores animi ad id?
-    </section>
+    </article>
+
+    <div class="contenedor_de_ejemplos_box_sizing">
+      <div class="box-sizig-border-box-ejemplo-sin-aplicar">
+        Un ejemplo de del box sizing: border box (Sin aplicar la propiedad)
+      </div>
+
+      <div class="box-sizig-border-box-ejemplo-con-aplicacion">
+        Un ejemplo de del box sizing: border box(aplicando la propiedad)
+      </div>
+    </div>
+
+
     <section class="proximos">
       <article class="dia">
-        <img src="trueno.svg" alt="imagen trueno">
-        <h3>Lunes</h3>
-        <p>24°C</p>
-        <p>7:27pm</p>
-        <p>Lima</p>
+        <img class="proximos__dia__imagen" src="trueno.svg" alt="imagen trueno">
+        <div class="proximos__dia__contenedor">
+          <h3>Lunes</h3>
+          <p>24°C</p>
+          <p>7:27pm</p>
+          <p>Lima</p>
+        </div>
+
       </article>
       <article class="dia">
         <img src="nublado.svg" alt="imagen trueno">
