@@ -13,17 +13,24 @@
 }
 
 body {
-  height: 100dvh;
-  width: 100dvw;
-  display: flex;
-  flex-direction: column;
+  /* height: 100dvh;
+  width: 100dvw; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: min-content repeat(4, 1fr) min-content;
+  gap: 10px 0px;
+  grid-template-areas:
+    "Header Header Header Header"
+    "Main Main Main Main"
+    "Main Main Main Main"
+    "Main Main Main Main"
+    "Main Main Main Main"
+    "Footer Footer Footer Footer";
 }
 
 header {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  grid-area: Header;
+
   padding: 10px 20px;
   background: #e0f7fa;
   border-radius: 12px;
@@ -49,11 +56,7 @@ header {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-  flex: 7;
+  grid-area: Main;
 }
 
 nav {
@@ -72,11 +75,10 @@ ul {
 }
 
 .hoy {
-  display: grid;
+
   border: 1px solid;
   place-content: center;
   gap: 1rem;
-  grid-template-columns: 1fr;
   margin: 1rem;
 }
 
@@ -133,7 +135,7 @@ h2 {
 }
 
 footer {
-  flex: 1;
+  grid-area: Footer;
 }
 
 footer p::after {
@@ -202,13 +204,13 @@ footer p::before {
 }
 
 @media only screen and (min-width: 768px) {
-  .hoy {
+  /* .hoy {
     grid-template-columns: 1fr 2fr;
   }
 
   .proximos {
     grid-template-columns: [inicio] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [fin];
-  }
+  } */
 }
 
 @media only screen and (min-width: 1200px) {
